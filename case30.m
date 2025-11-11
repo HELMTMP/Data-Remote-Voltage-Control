@@ -4,9 +4,11 @@ function mpc = case_ieee30
 mpc.version = '2';
 
 
+
 %%-----  Power Flow Data  -----%%
 %% system MVA base
 mpc.baseMVA = 100;
+
 
 
 %% bus data
@@ -47,6 +49,7 @@ mpc.bus = [
 ];
 
 
+
 %% generator data
 mpc.gen = [
 %  bus   Pg	    Qg	    Qmax	Qmin	Vg	   mBase  status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
@@ -58,6 +61,7 @@ mpc.gen = [
 	11	0       16.2	24  	-6  	1.082	100 	1   	100 	0   	0	0	0   	0   	0   	0   	0           0   	0   	0   	0;
 	13	0       10.6	24  	-6  	1.071	100 	1   	100 	0   	0	0	0   	0   	0   	0   	0           0   	0   	0   	0;
 ];
+
 
 
 %% branch data
