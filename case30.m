@@ -46,12 +46,6 @@ mpc.bus = [
 	30  	1	2.6     1.9 	0	0       1	0.992	-17.94	33      1   	1.06	0.94    0       0       -99999  99999;
 ];
 
-% soma_ativa = sum(mpc.bus(:,3));
-% soma_reativa = sum(mpc.bus(:,4));
-% DEUS;
-% carga = 1.5;
-% mpc.bus(:,3) = carga*mpc.bus(:,3);
-% mpc.bus(:,4) = carga*mpc.bus(:,4);
 
 mpc.gen = [
 %  bus   Pg	    Qg	    Qmax	Qmin	Vg	   mBase  status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
@@ -63,7 +57,6 @@ mpc.gen = [
 	11	0       16.2	24  	-6  	1.082	100 	1   	100 	0   	0	0	0   	0   	0   	0   	0           0   	0   	0   	0;
 	13	0       10.6	24  	-6  	1.071	100 	1   	100 	0   	0	0	0   	0   	0   	0   	0           0   	0   	0   	0;
 ];
-
 
 
 %% branch data
@@ -110,7 +103,7 @@ mpc.branch = [
 	28	27	0       0.396	0   	0   	0   	0   	0.968	0	1   	-360	360;
 	27	29	0.2198	0.4153	0   	0   	0   	0   	1       0	1   	-360	360;
 	27	30	0.3202	0.6027	0       0   	0   	0   	1       0	1   	-360	360;
-	29	30	0.2399	0.4533	0       0   	0   	0   	1       0	1   	-360	360;    %Contingenciar
+	29	30	0.2399	0.4533	0       0   	0   	0   	1       0	1   	-360	360;
 	8	28	0.0636	0.2     0.0428	0   	0   	0   	1       0	1   	-360	360;
 	6	28	0.0169	0.0599	0.013	0   	0   	0   	1       0	1   	-360	360;
 ];
