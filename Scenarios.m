@@ -1,6 +1,5 @@
 % JMJ
 
-
 % Description of representative renewable generation, demand scenarios, and
 % probability of occurrence of scenarios
 
